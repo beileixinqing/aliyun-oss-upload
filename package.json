@@ -1,0 +1,29 @@
+{
+  "name": "project-admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "NODE_ENV=development gulp",
+    "nodemon": "open http://localhost:9990 && ./node_modules/.bin/nodemon bin/www",
+    "prd": "NODE_ENV=production pm2 start bin/www --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test_env": "NODE_ENV=test gulp"
+  },
+  "dependencies": {
+    "ali-oss": "^5.2.0",
+    "co": "^4.6.0",
+    "formidable": "^1.2.1",
+    "glob": "^7.1.2",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.8.1",
+    "koa-static": "^4.0.2",
+    "koa-views": "^6.1.4",
+    "koa2-multiparty": "^1.0.1",
+    "multiparty": "^4.1.4",
+  },
+}
